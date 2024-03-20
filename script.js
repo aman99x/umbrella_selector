@@ -17,23 +17,27 @@ document.addEventListener("DOMContentLoaded", function() {
         input.addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    // Show logo-container when image is selected
-                    logoContainer.style.display = 'block';
-                    umbrellaImg.style.position = 'relative'; 
-                    logoImg.src = e.target.result;
-                    logoImg.style.position = 'absolute'; 
-                    logoImg.style.top = '76%'; 
-                    logoImg.style.left = '33%'; 
-                    logoImg.style.transform = 'translate(-50%, -50%)'; 
-                    logoImg.style.maxWidth = '40px'; 
-                    logoImg.style.maxHeight = '40px'; 
-                };
-                reader.readAsDataURL(file);
+                if (file.size <= 5 * 1024 * 1024) { // Check if file size is less than or equal to 5MB
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        // Show logo-container when image is selected
+                        logoContainer.style.display = 'block';
+                        umbrellaImg.style.position = 'relative'; 
+                        logoImg.src = e.target.result;
+                        logoImg.style.position = 'absolute'; 
+                        logoImg.style.top = '76%'; 
+                        logoImg.style.left = '33%'; 
+                        logoImg.style.transform = 'translate(-50%, -50%)'; 
+                        logoImg.style.maxWidth = '40px'; 
+                        logoImg.style.maxHeight = '40px'; 
+                    };
+                    reader.readAsDataURL(file);
 
-                // Display file name in the upload button label
-                uploadButtonLabel.textContent = file.name;
+                    // Display file name in the upload button label
+                    uploadButtonLabel.textContent = file.name;
+                } else {
+                    alert("Maximum file size allowed is 5MB."); // Alert user if file size exceeds limit
+                }
             }
         });
     });

@@ -2,97 +2,110 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #e4f2f5;
+    min-height: 100vh; 
+    background-color: #e4f2f5; 
 }
 
+/* Styling for the color options */
 .color-options {
     margin-bottom: 20px;
 }
 
+/* Styling for the main heading */
 .heading {
-    font-size: 52px;
+    font-size: 52px; 
 }
 
+/* Styling for paragraphs */
 p {
-    font-size: 20px;
+    font-size: 20px; 
 }
 
+/* Styling for color selection buttons */
 .color-blue,
 .color-yellow,
 .color-pink {
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+    width: 30px; 
+    height: 30px; 
+    border: none; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+    cursor: pointer; 
 }
+
 
 .color-blue {
-    background-color: blue;
+    background-color: blue; 
 }
 
+
 .color-yellow {
-    background-color: yellow;
+    background-color: yellow; 
 }
 
 .color-pink {
-    background-color: pink;
+    background-color: pink; 
 }
 
+/* Styling for the upload logo section */
 .upload-logo {
-    background-color: rgb(7, 200, 187);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    background-color: rgb(7, 200, 187); 
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
 }
 
+/* Styling for the upload icon */
 .upload-logo span {
-    position: absolute;
-    margin-left: -180px;
+    position: absolute; 
+    margin-left: -180px; 
 }
 
+/* Styling for the upload button text */
 .upload-logo h2 {
-    margin: 0;
+    margin: 0; 
 }
 
+/* Styling for the logo preview */
 #logo-preview {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 10px;
+    width: 100%; 
+    max-width: 200px; 
+    margin-bottom: 10px; 
 }
 
+/* Styling for the umbrella preview */
 .umbrella-preview {
-    margin-right: 100px;
+    margin-right: 100px; 
 }
 
+/* Styling for the umbrella image */
 .umbrella {
-    width: 450px;
-    margin-right: 50px;
+    width: 450px; 
+    margin-right: 50px; 
 }
 
+/* Styling for the logo image */
 .logo {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; /* Positions the logo image horizontally at the center */
+    transform: translateX(-50%); /* Adjusts the position of the logo image */
+    width: 80px; 
 }
 
 #uploadButton {
-    background-color: rgb(7, 200, 187);
-    height: 50px;
-    width: 400px;
+    background-color: rgb(7, 200, 187); /* Background color for the upload button */
+    height: 50px; 
+    width: 400px; 
 }
 
 button {
     color: white;
-    border: none;
+    border: none; /* Removes border from all buttons */
 }
 
 .logo-container {
-    display: none;
+    display: none; /* Initially hides the logo container */
 }
