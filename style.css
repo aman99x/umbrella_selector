@@ -1,3 +1,4 @@
+/* General styles */
 .container {
     display: flex;
     justify-content: center;
@@ -9,33 +10,18 @@
 .color-options {
     margin-bottom: 20px;
 }
-.heading{
-    font-size:52px ;
+
+.heading {
+    font-size: 52px;
 }
 
-p{
+p {
     font-size: 20px;
 }
-.color-blue {
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    background-color: blue;
-}
 
-.color-yellow {
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    background-color: yellow;
-}
-
+/* Color options */
+.color-blue,
+.color-yellow,
 .color-pink {
     width: 30px;
     height: 30px;
@@ -43,28 +29,39 @@ p{
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.color-yellow {
+    background-color: yellow;
+}
+
+.color-pink {
     background-color: pink;
 }
 
+/* Logo upload section */
 .upload-logo {
     background-color: rgb(7, 200, 187);
     height: 50px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     position: relative;
 }
 
 .upload-logo span {
-    position: absolute; 
-    left: 0; 
+    position: absolute;
+    left: 0;
     margin-left: 10px;
 }
 
 .upload-logo h2 {
-    margin: 0; 
+    margin: 0;
 }
-
 
 #logo-preview {
     width: 100%;
@@ -89,12 +86,11 @@ p{
     width: 80px;
 }
 
-#uploadButton{
+#uploadButton {
     background-color: rgb(7, 200, 187);
 }
 
-button{
+button {
     color: white;
     border: none;
 }
-
