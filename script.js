@@ -2,7 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const umbrellaImg = document.querySelector('.umbrella');
     const colorButtons = document.querySelectorAll('.color-options button');
     const uploadButton = document.getElementById('uploadButton');
+    const logoContainer = document.querySelector('.logo-container');
     const logoImg = document.querySelector('.logo');
+
+    logoContainer.style.display = 'none';
 
     uploadButton.addEventListener('click', function() {
         const input = document.createElement('input');
@@ -14,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
+                    logoContainer.style.display = 'block';
                     umbrellaImg.style.position = 'relative'; 
                     logoImg.src = e.target.result;
                     logoImg.style.position = 'absolute'; 
