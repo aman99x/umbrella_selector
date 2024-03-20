@@ -55,8 +55,7 @@ p {
 
 .upload-logo span {
     position: absolute;
-    left: 0;
-    margin-left: 10px;
+    margin-left: -180px; /* Adjust as needed */
 }
 
 .upload-logo h2 {
@@ -88,6 +87,8 @@ p {
 
 #uploadButton {
     background-color: rgb(7, 200, 187);
+    height: 50px;
+    width: 400px; /* Adjust as needed */
 }
 
 button {
