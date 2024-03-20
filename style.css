@@ -6,10 +6,6 @@
     background-color: #e4f2f5;
 }
 
-.customizer h2 {
-    margin-bottom: 20px;
-}
-
 .color-options {
     margin-bottom: 20px;
 }
@@ -77,7 +73,6 @@ p{
 }
 
 .umbrella-preview {
-    /* position: relative; */
     margin-right: 100px;
 }
 
@@ -92,5 +87,14 @@ p{
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
+}
+
+#uploadButton{
+    background-color: rgb(7, 200, 187);
+}
+
+button{
+    color: white;
+    border: none;
 }
 
