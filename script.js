@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const uploadButton = document.getElementById('uploadButton');
     const logoContainer = document.querySelector('.logo-container');
     const logoImg = document.querySelector('.logo');
+    const uploadButtonLabel = uploadButton.querySelector('h2');
 
+    // Hide logo-container initially
     logoContainer.style.display = 'none';
 
     uploadButton.addEventListener('click', function() {
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
+                    // Show logo-container when image is selected
                     logoContainer.style.display = 'block';
                     umbrellaImg.style.position = 'relative'; 
                     logoImg.src = e.target.result;
@@ -28,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     logoImg.style.maxHeight = '40px'; 
                 };
                 reader.readAsDataURL(file);
+
+                // Display file name in the upload button label
+                uploadButtonLabel.textContent = file.name;
             }
         });
     });
